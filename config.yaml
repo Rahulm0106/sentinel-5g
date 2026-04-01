@@ -1,0 +1,21 @@
+qdrant:
+  host: localhost
+  port: 6333
+  collection_name: sentinel-5g
+
+embedding:
+  model_name: all-MiniLM-L6-v2
+  vector_size: 384
+
+llm:
+  model_name: llama3.2
+  base_url: http://localhost:11434
+
+dataset:
+  name: greenwich157/telco-5G-data-faults
+  split: train
+
+retrieval:
+  top_k: 10
+  rerank_top_k: 3
+  confidence_threshold: 0.7
