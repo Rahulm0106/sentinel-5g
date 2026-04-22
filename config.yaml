@@ -8,7 +8,7 @@ embedding:
   vector_size: 384
 
 llm:
-  model_name: llama3.2
+  model_name: qwen2.5:7b
   base_url: http://localhost:11434
 
 dataset:
